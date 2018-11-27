@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  app:
+    ports:
+      - "10100:80"
+  db:
+    environment:
+      MYSQL_DATABASE: secret_santa
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: root
